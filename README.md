@@ -10,9 +10,8 @@ Theory:
 Depth First Traversal (or DFS) for a graph is like Depth First Traversal of a tree. The only catch here is that, unlike trees, graphs may contain cycles (a node may be visited twice). Use a Boolean visited array to avoid processing a node more than once. A graph can have more than one DFS traversal. Depth-first search is an algorithm for traversing or searching trees or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. 
 
 Step 1: Initially, stack and visited arrays are empty.
-image
 
-<img width="926" height="337" alt="image" src="https://github.com/user-attachments/assets/5e9289fa-bfd7-4128-aea1-d132b2805d03" />
+<img width="899" height="365" alt="image" src="https://github.com/user-attachments/assets/4270ced7-2203-4942-ae2d-a6539e614211" />
 
 Queue and visited arrays are empty initially. Stack and visited arrays are empty initially. 
 
@@ -20,35 +19,34 @@ Step 2: Visit 0 and put its adjacent nodes which are not visited yet into the st
 
 Visit node 0 and put its adjacent nodes (1, 2, 3) into the stack Visit node 0 and put its adjacent nodes (1, 2, 3) into the stack
 
-<img width="918" height="323" alt="image" src="https://github.com/user-attachments/assets/3d01ea53-2f28-4652-9ea2-8d9983c99e79" />
+<img width="766" height="319" alt="image" src="https://github.com/user-attachments/assets/abbe3816-5ed6-4981-af8f-63ac3479d3ac" />
 
 Step 3: Now, Node 1 at the top of the stack, so visit node 1 and pop it from the stack and put all of its adjacent nodes which are not visited in the stack. image
 
 Visit node 1 Visit node 1
 
-<img width="924" height="320" alt="image" src="https://github.com/user-attachments/assets/1b4a125e-fe31-4409-ae8e-6099d0e4f3b8" />
+<img width="738" height="310" alt="image" src="https://github.com/user-attachments/assets/52eb86c3-91d6-4e1b-b4bf-8812f61b9ba7" />
 
 Step 4: Now, Node 2 at the top of the stack, so visit node 2 and pop it from the stack and put all of its adjacent nodes which are not visited (i.e, 3, 4) in the stack. image
 
 Visit node 2 and put its unvisited adjacent nodes (3, 4) into the stack Visit node 2 and put its unvisited adjacent nodes (3, 4) into the stack
 
-<img width="925" height="323" alt="image" src="https://github.com/user-attachments/assets/4798394e-558d-4216-ba2c-0a9c9d8c178c" />
+<img width="854" height="375" alt="image" src="https://github.com/user-attachments/assets/8bf4784d-efd6-4eaa-b939-47f6595447dd" />
 
 Step 5: Now, Node 4 at the top of the stack, so visit node 4 and pop it from the stack and put all of its adjacent nodes which are not visited in the stack. image
 
 Visit node 4 Visit node 4
 
-<img width="923" height="330" alt="image" src="https://github.com/user-attachments/assets/3dcbd9a3-9c05-4d29-9695-a9018d1a5d37" />
+<img width="824" height="383" alt="image" src="https://github.com/user-attachments/assets/abb4c143-312b-4dc9-9e12-6775b9b451d0" />
 
 Step 6: Now, Node 3 at the top of the stack, so visit node 3 and pop it from the stack and put all of its adjacent nodes which are not visited in the stack. image
 
 Visit node 3 Visit node 3
 
-<img width="920" height="328" alt="image" src="https://github.com/user-attachments/assets/cfa3e81e-38ec-4957-a5bb-b60c24646619" />
+<img width="882" height="409" alt="image" src="https://github.com/user-attachments/assets/db555dee-9bbe-4e71-8088-6f01ab3e8dad" />
 
 Now, the Stack becomes empty, which means we have visited all the nodes, and our DFS traversal ends.
 
-<img width="915" height="321" alt="image" src="https://github.com/user-attachments/assets/c4a53a02-3826-4de5-b906-9ade8fd58abb" />
 
 Algorithm:
 Construct a Graph with Nodes and Edges
